@@ -27,6 +27,7 @@ void insertAtTail(node *&head, int val){
 
 void intersect(node *head1, node *head2, int pos){
     node *temp1 = head1;
+    node* newN;
     pos--;
     while(pos--){
         temp1 = temp1->next;
@@ -103,7 +104,7 @@ int main()
     insertAtTail(head1,6);
     insertAtTail(head2,9);
     insertAtTail(head2,10);
-    intersect(head1,head2, 3);
+    intersect(head1,head2, 5);
     display(head1);
     display(head2);
     cout<<intersection(head1, head2);

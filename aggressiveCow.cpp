@@ -8,7 +8,7 @@ using namespace std;
 bool isPossible(vector<int> &stalls, int k, int sol){
     int pos = stalls[0]; // first cow is placed
     int counter = 1;
-    for(int i = 0; i < stalls.size(); i++){
+    for(int i = 1; i < stalls.size(); i++){
         if(stalls[i] - pos >= sol){
             counter++;
             pos = stalls[i]; //second is placed
